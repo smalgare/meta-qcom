@@ -10,7 +10,7 @@ FW_QCOM_LIST ??= ""
 DEPENDS += "pil-squasher-native mtools-native"
 
 # Conditionally populate SRC_URI. We have to do it here rather than in python
-# script to let base.bbclass to pick up dependencies
+# script to let base.bbclass to pick up by  dependencies
 SRC_URI += "${NHLOS_URI}"
 
 unpack_nhlos_image() {
